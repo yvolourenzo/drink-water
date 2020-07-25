@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "water",
+    "name": "Drink Water",
     "slug": "water",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -17,10 +17,16 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.drinkwater",
+      "buildNumber": "1.0.0"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "android": {
+      "package": "com.yourcompany.drinkwater",
+      "versionCode": 1
     }
   }
 }
