@@ -1,14 +1,16 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-import './styles.tsx';
+import { Container } from './styles';
 
 const Home = () => {
   return (
       <>
-        <View>
-          <Text>Home</Text>
-        </View>
+        <Container>
+          <View>
+            <Text>Home</Text>
+          </View>
+        </Container>
       </>
   )
 }
