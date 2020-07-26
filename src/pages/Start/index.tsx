@@ -1,14 +1,16 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-import './styles.tsx';
+import { Container } from './styles';
 
 const Start = () => {
   return (
       <>
-        <View>
+        <Container>
+          <View>
             <Text>Start</Text>
-        </View>
+          </View>
+        </Container>
       </>
   );
 }
