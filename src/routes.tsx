@@ -1,11 +1,11 @@
 import React from "react";
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import { NavigationContainer } from "@react-navigation/native";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 
+import Calendar from "./pages/Calendar";
 import Home from "./pages/Home";
-import Start from "./pages/Start";
+import Config from "./pages/Configure";
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -18,7 +18,7 @@ const Routes = () => {
                 labeled={false}
                 
             >
-                <Tab.Screen name="Start" component={Start} 
+                <Tab.Screen name="Calendar" component={Calendar} 
                     options={{
                         tabBarIcon: ({ focused }) => (
                             <Icon name="wine-bottle" size={22} color={focused ? '#2968A1' : '#14171A'} />
@@ -32,7 +32,7 @@ const Routes = () => {
                         )
                     }}  
                 />
-                <Tab.Screen name="Config" component={Home} 
+                <Tab.Screen name="Config" component={Config} 
                     options={{
                         tabBarIcon: ({ focused }) => (
                             <Icon name='cog' size={22} color={focused ? '#2968A1' : '#14171A'} />
