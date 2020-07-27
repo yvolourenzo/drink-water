@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Button } from 'react-native';
 
 import { Container } from './styles';
 
@@ -8,7 +8,7 @@ const Start = () => {
       <>
         <Container>
           <View>
-            <Text>Start</Text>
+            <Button title="Notificações" onPress={() => {}}></Button>
           </View>
         </Container>
       </>
